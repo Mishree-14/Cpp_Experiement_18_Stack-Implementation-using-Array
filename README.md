@@ -60,6 +60,33 @@ Underflow: Happens when the stack is empty and we try to remove (pop) or peek.
 | Implementation      | Simple and easy                    | More complex                             |
 
 ## Algorithm
+
+## Stack Function:
+
+### Algorithm for push()
+
+Increment the value of top by 1.
+
+Assign the value 77 to array[top].
+
+Return the newly inserted element.
+
+### Algorithm for the Main Program
+
+Initialize an integer array array[5] to represent the stack.
+
+Initialize top = -1 to indicate the stack is empty.
+
+Use a for loop to repeat 5 times:
+
+Call the push(array, &top) function.
+
+Print the element just inserted.
+
+End the program.
+
+## Stack Class:
+
 ### Algorithm for pushElement(num)
 
 Check if topIndex == MAX_SIZE - 1.
@@ -92,7 +119,19 @@ Else, print all elements from index 0 to topIndex.
 
 ## Program Description
 
-The program defines a class MyStack which contains:
+### Stack Function:
+
+The program uses an integer array array[5] to represent the stack.
+
+The variable top keeps track of the topmost element index of the stack. Initially, it is -1, meaning the stack is empty.
+
+The push() function inserts the value 77 into the stack at the position indicated by top.
+
+The main function calls push() 5 times to fill the stack and prints all elements of the stack.
+
+The program uses pass-by-reference (&top) so that changes to top inside the function affect the main function.
+
+### Stak Class:
 
 ### Private data:
 
